@@ -1,0 +1,99 @@
+.hero {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    color: #fefcf7;
+    margin-bottom: 24px;
+}
+
+.hero__block {
+    background-image: url("../img/hero-mob.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 104px 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fefcf7;
+    opacity: 0.8;
+    margin-bottom: 39px;
+}
+
+.hero__btn {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #fefcf7;
+    padding: 15px 31px;
+    border-radius: 6px;
+    background-color: #0e8784;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 43px;
+        padding-bottom: 136px;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        line-height: 100%;
+        width: 329px;
+    }
+
+    .hero__block {
+        background-image: url("../img/hero-plansh.jpg");
+        padding: 104px 58px;
+        text-align: start;
+    }
+
+    .hero__text {
+        font-size: 15px;
+        line-height: 167%;
+        width: 398px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 120px;
+    }
+
+    .hero__title {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 100%;
+        color: #fefcf7;
+        width: 493px;
+    }
+    .hero__text {
+        font-size: 16px;
+        line-height: 162%;
+        width: 445px;
+    }
+
+    .hero__block {
+        background-image: url("../img/hero-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 117px 85px;
+        border-radius: 10px;
+        text-align: start;
+    }
+}

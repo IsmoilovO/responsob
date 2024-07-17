@@ -1,0 +1,134 @@
+.choose {
+    padding: 120px 0;
+}
+.choose__block {
+    padding: 67px 24px 24px 24px;
+    background-color: #2c343e;
+    border-radius: 10px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 600px;
+        left: 0;
+        right: 0;
+        background-color: #2c343e;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+
+.choose__title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 100%;
+    text-align: center;
+    color: #fefcf7;
+    margin-bottom: 30px;
+}
+
+.shoose__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #fefcf7;
+}
+.choose__subtitle {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 133%;
+
+    color: #fefcf7;
+    margin-bottom: 24px;
+}
+
+.choose__desc {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+
+    color: #fefcf7;
+}
+
+.choose__item {
+    border-radius: 8px;
+    background-color: #0e8784;
+    padding: 72px 33px 51px 33px;
+    text-align: center;
+    margin-bottom: 30px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 72px;
+        height: 72px;
+        background-image: url("../img/cofee.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 56px;
+    }
+}
+
+.choose__list {
+    padding: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .choose__item {
+        display: flex;
+        align-items: center;
+        gap: 55px;
+        &::before {
+            flex-shrink: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .choose__content {
+        text-align: start;
+    }
+
+    .choose__block {
+        &::after {
+            height: 418px;
+        }
+    }
+
+    .choose__list {
+        padding: 57px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .choose__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 85px;
+    }
+
+    .choose__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choose__content {
+        text-align: center;
+    }
+
+    .choose__block::after {
+        height: 311px;
+    }
+
+    .shoose__text {
+        width: 540px;
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+}

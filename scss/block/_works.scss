@@ -1,0 +1,125 @@
+.work {
+    padding-bottom: 120px;
+}
+.works__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 133%;
+    text-align: center;
+    color: #83888f;
+    margin-bottom: 80px;
+}
+.works__subtitle {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 114%;
+    color: #333d4b;
+    margin-bottom: 24px;
+}
+.works__desc {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    color: #333d4b;
+}
+
+.works__item {
+    text-align: center;
+    margin-bottom: 56px;
+    &::before {
+        content: "01";
+        margin-bottom: 24px;
+
+        display: inline-block;
+
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 100%;
+
+        color: #fdd6ba;
+    }
+}
+
+.works__btn {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #fefcf7;
+    padding: 16px 31px;
+    background-color: #0e8784;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    max-width: max-content;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: #66d2cf;
+    }
+}
+
+.works__line_block {
+    display: none;
+}
+
+.works__line_item {
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    border: 2px solid #0e8784;
+    background-color: #fefcf7;
+}
+
+.works__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 467px;
+    height: 2px;
+    background-color: #fdd6ba;
+}
+
+@media screen and (min-width: 768px) {
+    .works__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    .works__line_block {
+        display: inline-block;
+        margin-bottom: 48px;
+    }
+    .works__title {
+        text-align: start;
+    }
+
+    .works__item {
+        text-align: start;
+    }
+
+    .works__btn {
+        display: inline-block;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .works__list {
+        gap: 95px;
+    }
+
+    .works__line {
+        width: 760px;
+    }
+
+    .works__desc {
+        width: 285px;
+    }
+
+    .works__subtitle {
+        width: 245px;
+    }
+}
